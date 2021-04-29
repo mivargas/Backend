@@ -1,0 +1,26 @@
+para crear el proyecto se usa el comando npm init 
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "API RESTfull del Master en Frameworks javascript",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js", //eso se escribe manualmente y va de la mano con nodemon, se escribe para iniciar el mismo
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Miguel Vargas",
+  "license": "MIT",
+  "dependencies": { //dependencias que se deben instalar para trabajar con el proyecto de node... se intalan con npm install --save xxxxx
+    "body-parser": "^1.19.0",
+    "connect-multiparty": "^2.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.17",
+    "validator": "^13.5.2"
+  },
+  "devDependencies": { //dependencias de desarrollo: solo se hacen uso de ellas en dicho modo... se intalan con npm install --save-dev xxxxx
+    "nodemon": "^2.0.7" //dependencia para que el servidoor actualice automaticamente ante un cambion de codigo
+  }
+}
+
+
+NOTA: para ejecutar en terminal el archivo index.js se usa node index.js... y con el nodemon npm start
